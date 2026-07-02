@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark theme (default) */
+:root {
+  --color-ink-950: 11 12 15;      /* page background */
+  --color-ink-900: 17 19 24;      /* card background */
+  --color-ink-800: 24 27 34;      /* input / subtle surface */
+  --color-ink-700: 34 38 47;      /* soft borders */
+  --color-ink-600: 46 50 60;      /* stronger borders */
+  --color-champagne: 201 161 90;
+  --color-champagne-light: 228 200 136;
+  --color-champagne-dark: 156 123 62;
+  --color-ivory: 244 239 230;     /* primary text */
+  --color-muted: 139 143 152;     /* secondary text */
+}
+
+/* Light theme */
+html.light {
+  --color-ink-950: 244 239 230;   /* page background */
+  --color-ink-900: 255 255 255;   /* card background */
+  --color-ink-800: 237 231 218;   /* input / subtle surface */
+  --color-ink-700: 201 161 90;    /* soft borders (gold-tinted) */
+  --color-ink-600: 156 123 62;    /* stronger borders */
+  --color-champagne: 156 123 62;
+  --color-champagne-light: 201 161 90;
+  --color-champagne-dark: 122 95 45;
+  --color-ivory: 27 27 27;        /* primary text */
+  --color-muted: 90 90 90;        /* secondary text */
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(var(--color-ink-950));
+  transition: background-color 0.2s ease;
+}
+
+::selection {
+  background-color: rgb(var(--color-champagne));
+  color: rgb(var(--color-ink-950));
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--color-champagne));
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
