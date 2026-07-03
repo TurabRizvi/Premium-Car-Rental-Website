@@ -54,7 +54,7 @@ https://premium-car-rental-website-lovat.vercel.app
 
 ### Installation
 
-    git clone <your-repo-url>
+    git clone <(https://github.com/TurabRizvi/Premium-Car-Rental-Website.git)>
     cd car-rental
     npm install
     npm run dev
