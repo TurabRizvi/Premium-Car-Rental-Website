@@ -6,7 +6,7 @@ assessment project. Covers standard rentals (economy through SUVs and EVs) along
 limousines, and exotic supercars).
 
 ## Live Demo
-_Add your deployed Vercel/Netlify link here after deployment._
+https://premium-car-rental-website-lovat.vercel.app
 
 ## Tech Stack
 
