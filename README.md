@@ -116,24 +116,3 @@ The mock API can be forced to throw, to demonstrate the error/retry UI. In the b
     localStorage.setItem('car-rental:force-error', '1')
     // then refresh the page
     localStorage.removeItem('car-rental:force-error')
-
-## Deployment
-
-### Vercel
-1. Push this repo to GitHub.
-2. Import it in Vercel. Framework preset: Vite. Build command: npm run build. Output directory: dist.
-3. Deploy.
-
-### Netlify
-1. Push this repo to GitHub.
-2. New site from Git. Build command: npm run build. Publish directory: dist.
-3. Deploy.
-
-All data is a local mock JSON file (no real backend), so no environment variables are needed.
-
-## Future Improvements
-
-- Replace the localStorage admin overlay with a real backend (json-server or a small API) and
-  proper authentication, so fleet changes persist for all visitors
-- Show real per-day pricing or seasonal rates instead of a flat daily rate
-- Add automated tests (Vitest + React Testing Library) for booking form validation
